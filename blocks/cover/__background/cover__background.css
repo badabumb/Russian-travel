@@ -1,0 +1,45 @@
+.cover__background {
+    margin: 0 auto 0;
+    z-index: 2;
+}
+
+@media  screen and (min-width: 1280px) {
+    .cover__background {
+        max-width: 1184px;
+        max-height: 740px;
+        object-fit: cover;
+    }
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1279px) {
+    .cover__background {
+        width: 100%;
+        max-width: 1184px;
+        max-height: 740px;
+        object-fit: cover;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+    .cover__background {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media  screen and (min-width: 425px) and (max-width: 768px) {
+    .cover__background {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media  screen and (max-width: 425px) {
+    .cover__background {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

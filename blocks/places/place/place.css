@@ -1,0 +1,82 @@
+.place {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 80px auto 0;
+    align-items: start;
+    align-content: start;
+}
+
+.place:first-child {
+    margin-top: 0;
+}
+
+@media  screen and (min-width: 1280px) {
+    .place {
+        max-width: 1184px;
+        margin-top: 80px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        grid-row-gap: 25px;
+        grid-template-areas: 
+        "header link"
+        "image paragraphA"
+        "image paragraphB"
+        "image .";
+    }
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1280px) {
+    .place {
+        max-width: 928px;
+        margin-top: 80px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        grid-template-areas: 
+        "header link"
+        "image paragraphA"
+        "image paragraphB"
+        "image .";
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+    .place {
+        max-width: 720px;
+        margin-top: 73px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        grid-template-areas: 
+        "header link"
+        "image paragraphA"
+        "image paragraphB"
+        "image .";
+    }
+}
+
+@media  screen and (min-width: 425px) and (max-width: 768px) {
+    .place {
+        width: 100%;
+        max-width: 592px;
+        grid-template-areas: 
+        "header"
+        "link"
+        "image"
+        "paragraphA"
+        "paragraphB";
+        margin-top: 50px;
+    }
+}
+
+@media  screen and (max-width: 425px) {
+    .place {
+        width: 100%;
+        grid-template-areas: 
+        "header"
+        "link"
+        "image"
+        "paragraphA"
+        "paragraphB";
+        margin-top: 50px;
+    }
+}
